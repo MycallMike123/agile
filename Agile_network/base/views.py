@@ -192,6 +192,5 @@ def UpdateUser(request):
 
 def TopicsPage(request):
     topics = Topic.objects.filter()
-
     context = {'topics': topics}
     return render(request, 'base/topics_mobile.html', context)
